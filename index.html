@@ -221,7 +221,7 @@ $("nameForm").addEventListener("submit", async (e) => {
     localStorage.setItem("chat_name", name);
     openChat();
   } catch (err) {
-    $("nameNote").textContent = "Could not start the chat. Please try again.";
+    $("nameNote").textContent = "Could not start the chat. (" + (err.code || err.message) + ")";
   } finally {
     $("nameBtn").disabled = false;
   }
