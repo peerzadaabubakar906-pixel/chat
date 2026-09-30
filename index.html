@@ -45,7 +45,7 @@
   /* Name screen */
   .center { min-height: 100%; display: grid; place-items: center; padding: 20px; }
   .card {
-    width: 100%; max-width: 380px; background: var(--panel);
+    width: 100%; max-width: 460px; background: var(--panel);
     border: 1px solid var(--line); border-radius: 16px; padding: 28px 24px;
   }
   .card h1 { margin: 0 0 6px; font-size: 26px; line-height: 1.15; letter-spacing: -0.01em; }
@@ -60,6 +60,7 @@
     background: var(--teal); color: var(--teal-ink); font-weight: 700; cursor: pointer;
   }
   .btn:disabled { opacity: .5; cursor: default; }
+  .card a { color: var(--teal); font-weight: 600; overflow-wrap: anywhere; }
   .note { margin-top: 12px; min-height: 1.2em; font-size: 14px; color: var(--danger); }
 
   /* Chat screen */
@@ -86,7 +87,7 @@
 <main class="center" id="nameScreen" hidden>
   <form class="card" id="nameForm" autocomplete="off">
     <h1>Message me</h1>
-    <p>Pick any name you like. It only shows up in this chat, and I will reply right here.</p>
+    <p>Hi, I can create engaging Shorts from long-form videos and handle the editing as well. If you have any projects or extra editing work, I’d be happy to help at a reasonable rate. If you’re interested, feel free to reach out, and share work samples with you.<br><a href="mailto:peerzadaabubakar906@gmail.com">peerzadaabubakar906@gmail.com</a></p>
     <label for="nameInput">Your name</label>
     <input class="field" id="nameInput" maxlength="30" placeholder="e.g. Ali" required>
     <button class="btn" id="nameBtn" type="submit">Start chat</button>
