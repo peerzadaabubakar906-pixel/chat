@@ -2,13 +2,11 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Sirf aap (admin). Neeche apna email likhein, wohi jo Firebase mein banaya hai.
     function isAdmin() {
       return request.auth != null
-        && request.auth.token.email == 'PASTE_YOUR_ADMIN_EMAIL';
+        && request.auth.token.email == 'peerzadaabubakar906@gmail.com';
     }
 
-    // Visitor ki chat ka id uska apna anonymous user id hota hai.
     function isOwner(chatId) {
       return request.auth != null && request.auth.uid == chatId;
     }
