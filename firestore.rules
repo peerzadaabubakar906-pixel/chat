@@ -4,7 +4,7 @@ service cloud.firestore {
 
     function isAdmin() {
       return request.auth != null
-        && request.auth.token.email == 'peerzadaabubakar906@gmail.com';
+        && request.auth.token.get('email', '') == 'peerzadaabubakar906@gmail.com';
     }
 
     function isOwner(chatId) {
